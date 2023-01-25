@@ -8,7 +8,7 @@ public class FirstPersonCamera : MonoBehaviour
 {
 
     // variables
-    public transform Player;
+    public Transform Player;
     public float mouseSensitivity = 2f;
     float cameraVerticalRotation = 0f;
 
@@ -35,12 +35,13 @@ public class FirstPersonCamera : MonoBehaviour
         cameraVerticalRotation -= inputY;
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
         transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
+        transform.localEulerAngles = Vector3.up * cameraVerticalRotation; //(yRotation, 0f, 0f);
 
 
         // rotate the player object and the camera around its Y axis
-       //(Vector3.up * inputX);
+        //(Vector3.up * inputX);
 
-        Player.transform.localRotation(Vector3.up * inputX);
+       // Player.transform.localRotation(Vector3.up * inputX);
 
     }
 }
