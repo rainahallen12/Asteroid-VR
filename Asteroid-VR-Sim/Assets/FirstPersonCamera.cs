@@ -10,9 +10,9 @@ public class FirstPersonCamera : MonoBehaviour
     // variables
     public Transform Player;
     public float mouseSensitivity = 2f;
+    
     float cameraVerticalRotation = 0f;
-
-    bool lockedCursor = true;
+    float cameraHorizontalRotation = 0f;
 
 
     void Start()
@@ -30,18 +30,15 @@ public class FirstPersonCamera : MonoBehaviour
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-
         // rotate the camera around its local X axis
         cameraVerticalRotation -= inputY;
+        cameraHorizontalRotation += inputX;
+        
+        // clamp looking up and down
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-        transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
-        transform.localEulerAngles = Vector3.up * cameraVerticalRotation; //(yRotation, 0f, 0f);
 
-
-        // rotate the player object and the camera around its Y axis
-        //(Vector3.up * inputX);
-
-       // Player.transform.localRotation(Vector3.up * inputX);
+        // actually moving the camera around
+        transform.localEulerAngles = Vector3.right * cameraVerticalRotation + Vector3.up * cameraHorizontalRotation;
 
     }
 }
