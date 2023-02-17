@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 16
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 58
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -880,14 +880,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\jacksonl\Documents\GitHub\Asteroid-VR2\Asteroid-VR-Sim
+  m_LastProjectPath: C:\Users\allenr\Documents\GitHub\Asteroid-VR2\Asteroid-VR-Sim
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 206c0000
-    m_LastClickedID: 27680
-    m_ExpandedIDs: 00000000de6d0000ee6d0000bc70000000ca9a3b
+    m_SelectedIDs: ecd10000
+    m_LastClickedID: 53740
+    m_ExpandedIDs: 00000000ecd1000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +915,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000206c0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1047,7 +1047,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 86abfdff6acdfdff30fbffff
+      m_ExpandedIDs: d6aaffffacadffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1297,9 +1297,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -17849.355, y: 16065.318, z: 19837.098}
+    m_Target: {x: -18074.227, y: 14100.991, z: 20600.002}
     speed: 2
-    m_Value: {x: -17849.355, y: 16065.318, z: 19837.098}
+    m_Value: {x: -18074.227, y: 14100.991, z: 20600.002}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1346,13 +1346,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0.072561145, y: 0.6756745, z: -0.067111194, w: 0.73054457}
     speed: 2
-    m_Value: {x: 0, y: 0.70710677, z: 0, w: 0.7071068}
+    m_Value: {x: 0.07176194, y: 0.67247945, z: -0.065775335, w: 0.73368603}
   m_Size:
-    m_Target: 8675.994
+    m_Target: 4992.9785
     speed: 2
-    m_Value: 9084.811
+    m_Value: 5228.25
   m_Ortho:
     m_Target: 0
     speed: 2
