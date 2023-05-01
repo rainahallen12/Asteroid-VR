@@ -10,11 +10,27 @@ public class FirstPersonCamera : MonoBehaviour
     // variables
     public Transform Player;
     public float mouseSensitivity = 2f;
+    public float speed;
     
     float cameraVerticalRotation = 0f;
     float cameraHorizontalRotation = 0f;
 
+    void Walk(){
 
+        if(Input.GetKey(KeyCode.W)){
+
+        transform.Translate(Vector3.forward * speed);      
+        
+        
+        if (transform.position.y < 43.5){
+                
+               transform.Translate(Vector3.up * 1);
+
+                }
+            }
+
+
+    }
     void Start()
     {
         // lock and hide the cursor
@@ -40,5 +56,10 @@ public class FirstPersonCamera : MonoBehaviour
         // actually moving the camera around
         transform.localEulerAngles = Vector3.right * cameraVerticalRotation + Vector3.up * cameraHorizontalRotation;
 
+        Walk();
+
     }
 }
+
+
+
